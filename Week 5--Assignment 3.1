@@ -10,23 +10,18 @@ code-----------
 ********************
 
 
-def computepay(h, r):
-    h = float(h)
-    r=float(r)
+hrs = input("Enter Hours: ")
+h = float(hrs)
+rate = input("Enter Rate: ")
+r = float(rate)
 
-    if (h>40):
-     rem = h-40
-     r1 = rem*r*1.5
-     r2= 40*r
-     result= r1+r2
-     return result
+if (h>40):
+ rem = h-40
+ r1 = rem*r*1.5
+ r2= 40*r
+ result= r1+r2
 
-hrs = input("Enter Hours:")
-rate = input("Enter Rate:")
-p = computepay(hrs, rate)
-print("Pay", p)
-
-
+print(result)
 ************************
 
 your output
